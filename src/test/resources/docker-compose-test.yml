@@ -1,0 +1,10 @@
+version: '3'
+services:
+  postgres:
+    image: postgres:13.2-alpine
+    environment:
+      POSTGRES_USER: codeal
+      POSTGRES_PASSWORD: codeal
+      POSTGRES_DB: codeal
+    volumes:
+      - ./init.sql:/docker-entrypoint-initdb.d/01-init.sql
