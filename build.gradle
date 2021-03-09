@@ -25,11 +25,10 @@ dependencies {
 
     runtime "org.postgresql:postgresql:$postgreSqlVersion"
 
-    testImplementation "org.junit.jupiter:junit-jupiter-api:$junitJupiterVersion"
-    testRuntimeOnly "org.junit.jupiter:junit-jupiter-engine:$junitJupiterVersion"
-
-    testImplementation "org.testcontainers:testcontainers:$testContainersVersion"
-    testImplementation "org.testcontainers:junit-jupiter:$testContainersVersion"
+    testImplementation("org.junit.jupiter:junit-jupiter-api:$junitJupiterVersion")
+    testImplementation("org.testcontainers:testcontainers:$testContainersVersion")
+    testImplementation("org.testcontainers:junit-jupiter:$testContainersVersion")
+    testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:$junitJupiterVersion")
 }
 
 test {
